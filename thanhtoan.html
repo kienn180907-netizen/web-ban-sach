@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán - Tiệm Sách Nhã Nam</title>
+    <link rel="stylesheet" href="thanhtoan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-book-open"></i> BOOK<span>WORLD</span>
+            </div>
+            <a href="#" class="back-home"><i class="fas fa-arrow-left"></i> Tiếp tục mua sách</a>
+        </div>
+    </header>
+
+    <div class="container main-wrapper">
+        
+        <div class="col-left">
+            <div class="section-title">
+                <h3><i class="fas fa-map-marker-alt"></i> Thông tin giao hàng</h3>
+            </div>
+            
+            <form class="checkout-form">
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Họ và tên người nhận</label>
+                        <input type="text" placeholder="Nguyễn Văn A" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Số điện thoại</label>
+                        <input type="tel" placeholder="0912..." required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Email (để nhận hóa đơn điện tử)</label>
+                    <input type="email" placeholder="email@example.com">
+                </div>
+
+                <div class="input-group">
+                    <label>Địa chỉ chi tiết</label>
+                    <input type="text" placeholder="Số nhà, tên đường, phường/xã..." required>
+                </div>
+
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Tỉnh / Thành phố</label>
+                        <select>
+                            <option value="">Chọn tỉnh thành</option>
+                            <option value="hanoi">Hà Nội</option>
+                            <option value="hcm">TP. Hồ Chí Minh</option>
+                            <option value="danang">Đà Nẵng</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>Quận / Huyện</label>
+                        <select>
+                            <option value="">Chọn quận huyện</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Ghi chú (Tùy chọn)</label>
+<textarea rows="2" placeholder="Ví dụ: Bọc Plastic, Gói quà tặng..."></textarea>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-right">
+            <div class="order-summary">
+                <h3>Đơn hàng của bạn</h3>
+                
+                <div class="product-list">
+                    <div class="product-item">
+                        <div class="prod-img">
+                            <img src="https://via.placeholder.com/60x90?text=Book+1" alt="Sách">
+                            <span class="badge-qty">1</span>
+                        </div>
+                        <div class="prod-info">
+                            <p class="prod-name">Nhà Giả Kim</p>
+                            <p class="prod-author">Paulo Coelho</p>
+                        </div>
+                        <div class="prod-price">79.000₫</div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="prod-img">
+                            <img src="https://via.placeholder.com/60x90?text=Book+2" alt="Sách">
+                            <span class="badge-qty">2</span>
+                        </div>
+                        <div class="prod-info">
+                            <p class="prod-name">Tâm Lý Học Tội Phạm</p>
+                            <p class="prod-author">Diệp Hồng Vũ</p>
+                        </div>
+                        <div class="prod-price">210.000₫</div>
+                    </div>
+                </div>
+
+                <div class="discount-code">
+                    <input type="text" placeholder="Mã giảm giá">
+                    <button>Áp dụng</button>
+                </div>
+
+                <div class="pricing-details">
+                    <div class="price-row">
+                        <span>Tạm tính</span>
+                        <span>289.000₫</span>
+                    </div>
+                    <div class="price-row">
+                        <span>Phí vận chuyển</span>
+                        <span>30.000₫</span>
+                    </div>
+                    <div class="price-row total">
+                        <span>Tổng cộng</span>
+                        <span class="total-amount">319.000₫</span>
+                    </div>
+                </div>
+
+                <div class="payment-methods">
+                    <label class="method">
+                        <input type="radio" name="payment" checked>
+                        <span><i class="fas fa-money-bill-wave"></i> Thanh toán khi nhận sách (COD)</span>
+                    </label>
+                    <label class="method">
+                        <input type="radio" name="payment">
+                        <span><i class="fas fa-university"></i> Chuyển khoản ngân hàng (QR Code)</span>
+                    </label>
+                </div>
+
+                <button class="btn-complete">HOÀN TẤT ĐẶT HÀNG</button>
+</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 BookWorld Store. Tri thức là sức mạnh.</p>
+    </footer>
+
+</body>
+</html>
